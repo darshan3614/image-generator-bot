@@ -1,5 +1,6 @@
-api keys: "sk-hV2ZXdHgwyHa9zOkkBSrvpFiRttZMqGKOzBWFpGmnn456Rlr"
-
 myenv/Scripts/activate  
 
 python main.py    
+
+to create a branch locally - git branch <branchname>
+save that branch to github - git push origin <branchname>
