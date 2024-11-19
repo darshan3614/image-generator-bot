@@ -1,0 +1,5 @@
+api keys: "sk-hV2ZXdHgwyHa9zOkkBSrvpFiRttZMqGKOzBWFpGmnn456Rlr"
+
+myenv/Scripts/activate  
+
+python main.py    
