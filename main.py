@@ -1,7 +1,7 @@
 import base64
 import os
 import requests
-
+ 
 engine_id = "stable-diffusion-v1-6"
 api_host = os.getenv('API_HOST', 'https://api.stability.ai')
 api_key = os.getenv("STABILITY_API_KEY")
@@ -9,6 +9,8 @@ api_key = "sk-hV2ZXdHgwyHa9zOkkBSrvpFiRttZMqGKOzBWFpGmnn456Rlr"
 if api_key is None:
     raise Exception("Missing Stability API key.")
 
+print("program running")
+val = input("Enter the prompt")
 response = requests.post(
     f"{api_host}/v1/generation/{engine_id}/text-to-image",
     headers={
@@ -19,7 +21,7 @@ response = requests.post(
     json={
         "text_prompts": [
             {
-                "text": "dog and cat"
+                "text": val
             }
         ],
         "cfg_scale": 7,
