@@ -64,8 +64,7 @@ def schedule_post(image_path, caption, post_time, username, password):
 # Main function for scheduling multiple posts
 def main():
     # Your Instagram credentials
-    USERNAME = "zzzeee940"
-    PASSWORD = "zensnap"
+
 
     # List of posts to schedule (image file paths and captions)
     posts = [
