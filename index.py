@@ -3,6 +3,7 @@ from instabot import Bot
 from PIL import Image
 import schedule
 import time
+ 
 
 # Prepare the image for Instagram
 def prepare_image(input_path, output_path, target_size=(1080, 1080)):
@@ -60,16 +61,16 @@ def schedule_post(image_path, caption, post_time, username, password):
     print(f"Scheduled post: {image_path} with caption: '{caption}' at {post_time}")
     schedule.every().day.at(post_time).do(post_to_instagram, image_path, caption, username, password)
 
-
 # Main function for scheduling multiple posts
 def main():
     # Your Instagram credentials
+    USERNAME = "zzzeee940"
+    PASSWORD = "zensnap"
 
-
-    # List of posts to schedule (image file paths and captions)
+    # List of posts to schedule (image file paths and captions)   
     posts = [
-        {"image": "img.jpeg", "caption": "Post 1 - Hello, world!", "time": "12:13"},
-        {"image": "img2.jpeg", "caption": "Post 2 - Good morning!", "time": "12:15"},
+        {"image": "v1_txt2img_0.jpg", "caption": "dd", "time": input("Enter time")},
+        #{"image": "img2.jpeg", "caption": "Post 2 - Good morning!", "time": "12:15"},
     ]
 
     # Schedule all posts

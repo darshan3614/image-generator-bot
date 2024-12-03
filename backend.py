@@ -1,3 +1,1 @@
-import main
-import scheduler
-
+api_key = "sk-hV2ZXdHgwyHa9zOkkBSrvpFiRttZMqGKOzBWFpGmnn456Rlr"
